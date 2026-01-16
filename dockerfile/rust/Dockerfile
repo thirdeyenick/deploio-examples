@@ -6,7 +6,7 @@ RUN --mount=type=cache,target=/usr/local/cargo/registry \
     cargo build --release
 RUN --mount=type=cache,target=/app/target cp /app/target/release/deploio-rust-example /tmp
 
-FROM gcr.io/distroless/cc-debian12
+FROM debian:12
 COPY --from=build-env /tmp/deploio-rust-example /
 COPY Rocket.toml /
 CMD ["./deploio-rust-example"]
