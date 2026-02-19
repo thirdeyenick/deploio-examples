@@ -1,2 +1,2 @@
 [com.heroku.static-web-server]
-root = "/"
+root = "."
