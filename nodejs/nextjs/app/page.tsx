@@ -27,7 +27,6 @@ body {
 
 export default function Home() {
   return (
-        return (
       <body style={{ backgroundColor: '#141d50', color: '#ffffff', fontFamily: 'system-ui' }}>
         <h1 style={{ textAlign: 'center' }}>Next.js App</h1>
         <p style={{ textAlign: 'center' }}>Git Revision: {process.env.DEPLOIO_GIT_REVISION ??
